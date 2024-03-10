@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Headland+One&display=swap"
+    rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: poppins;
+        background-color: #f9faff;
+    }
+
+    .left {
+        font-family: "Josefin Sans", sans-serif;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: #f9faff;
+        color: black;
+        height: 50px;
+        align-items: center;
+    }
+
+    .right ul {
+        display: flex;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    ul li a {
+        text-decoration: none;
+        margin: 0 15px;
+        color: black;
+    }
+
+    ul li a:hover {
+        color: gray;
+        cursor: pointer;
+        font-size: 1.02rem;
+    }
+
+    .firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 50px 0;
+
+    }
+
+    .leftsection {
+        color: white;
+        margin: 50px 0;
+        width: 30%;
+    }
+
+    .one {
+        color: #fdc435;
+
+    }
+
+    .three {
+        color: rgb(130, 130, 130);
+        font-family: "Comic Neue", cursive;
+        font-weight: 700;
+    }
+
+    .rightsection img {
+        width: 400px;
+        border-radius: 15px;
+    }
+
+    .name div {
+        font-size: 50px;
+        font-family: "Comic Neue", cursive;
+        font-weight: 1000;
+        color: rgb(37, 40, 43);
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #element {
+        color: lavender;
+    }
+
+    .secondsection {
+        margin: auto;
+        max-width: 80vw;
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .secondsection h1 {
+        font-size: 40px;
+    }
+
+    .box1 {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        align-items: center;
+        height: 300px;
+        background-color: rgb(244, 238, 238);
+        border-radius: 15px;
+        margin-bottom: 50px;
+        overflow: hidden;
+        box-shadow: 2px 2px 2px;
+    }
+    .box1 .leftclg{
+        width: 50%;
+    }
+    .box1 .rightclg{
+        width: 50%;
+    }
+    .leftclg {
+        width: 50%;
+
+    }
+
+    .rightclg {
+        width: 50%
+    }
+
+    .box2 {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        align-items: center;
+        height: 300px;
+        background-color: rgb(244, 238, 238);
+        border-radius: 15px;
+        margin-bottom: 50px;
+        overflow: hidden;
+        box-shadow: 2px 2px 2px;
+    }
+    .box2 .leftschl{
+        max-width: 50%;
+    }
+    .box2 .rightschl{
+        width: 50%;
+    }
+    .leftclg {
+        width: 50%;
+    }
+
+    .rightclg {
+        width: 50%
+    }
+
+    .btn1 {
+        padding: 10px 20px;
+        background-color: #fdc435;
+        color: #333333;
+        font-family: poppins;
+        font-weight: bold;
+        border: 0px;
+        border-radius: 10px;
+        margin: 5px;
+    }
+
+    .btn1 a {
+        text-decoration: none;
+        color: #333333;
+    }
+
+    .btn2 a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .btn2 {
+        padding: 10px 20px;
+        background-color: white;
+        color: black;
+        font-family: poppins;
+        font-weight: bold;
+        border-radius: 10px;
+        margin: 5px;
+    }
+
+    .thirdsection {
+        margin: auto;
+        max-width: 80vw;
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .thirdsection h1 {
+        font-size: 40px;
+    }
+
+    .box3 {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        align-items: center;
+        height: 300px;
+        background-color: rgb(244, 238, 238);
+        border-radius: 15px;
+        margin-bottom: 50px;
+        box-shadow: 2px 2px 2px;
+    }
+
+    .box3 h3 a{
+        font-size: 22px;
+        text-decoration: none;
+        color: #333333;
+    }
+
+    .box4 {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        align-items: center;
+        height: 300px;
+        background-color: rgb(244, 238, 238);
+        border-radius: 15px;
+        margin-bottom: 50px;
+        box-shadow: 2px 2px 2px;
+    }
+
+    .box4 h3 a{
+        font-size: 25px;
+        text-decoration: none;
+        color: #333333;
+    }
+    .box5 {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        align-items: center;
+        height: 300px;
+        background-color: rgb(244, 238, 238);
+        border-radius: 15px;
+        margin-bottom: 50px;
+        box-shadow: 2px 2px 2px;
+    }
+
+    .box5 h3 a{
+        font-size: 25px;
+        text-decoration: none;
+        color: #333333;
+        
+    }
+    .box6 {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        align-items: center;
+        height: 300px;
+        background-color: rgb(244, 238, 238);
+        border-radius: 15px;
+        margin-bottom: 50px;
+        box-shadow: 2px 2px 2px;
+    }
+
+    .box6 h3 a{
+        font-size: 35px;
+        text-decoration: none;
+        color: #333333;
+    }
+
+    .fourthsection {
+        margin: auto;
+        max-width: 80vw;
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .fourthsection h1 {
+        font-size: 40px;
+    }
+
+    .mail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mail img {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .phone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .phone img {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .linkedin {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .linkedin img {
+        padding: 10px;
+        margin: 5px;
+    }
+    
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> ARyan Verma</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#first">About</a></li>
+                    <li><a href="#second">Certifications</a></li>
+                    <li><a href="#third">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <section class="firstsection">
+                <div class="leftsection">
+                    <div class="one">Web Developer</div>
+                    <div class="name">
+                        <div>Hello, My Name</div>
+                        <div> is Aryan Verma</div>
+                    </div>
+                    <div class="three">I bring a dynamic spirit, a passion for continuous learning,
+                        and a knack for quick adaptation to the table. I am always on the lookout for exciting
+                        opportunities to learn and grow.If you have insights to share, projects that challenge the
+                        status quo, or if you’re simply passionate about innovation and continuous improvement, I’d love
+                        to connect.<div></div>
+                        <div class="btn"><button class="btn1"><a href="RESUME.docx" download>Resume</a></button>
+                            <button class="btn2"><a href="https://www.linkedin.com/in/aryanverma31/"
+                                    target="_blank">LinkedIn</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightsection"><img src="pngegg.png"></div>
+            </section>
+            <section class="secondsection" id="first">
+                <span>What are my educational qualifications?</span>
+                <h1>Educational Background</h1>
+                <hr>
+                <div class="box1">
+                    <div class="leftclg">
+                        <h3>Medicaps Univeristy</h3>
+                        <div>B.Tech Civil Engineering</div>
+                        <div>GPA : 8.57</div>
+                    </div>
+                    <div class="rightclg"><img src="medicaps.jpeg" width="700px"></div>
+                </div>
+                <div class="box2">
+                    <div class="leftschl">
+                        <img src="advanced.jpg" width="600px">
+                    </div>
+                    <div class="rightschl">
+                        <h3>Advanced Academy</h3>
+                        <div>CBSE (PCM)</div>
+                        <div>Percentage : 81.41%</div>
+                    </div>
+                </div>
+            </section>
+            <section class="thirdsection" id="second">
+                <span>Learners dont waste time right :)</span>
+                <h1>Certifications</h1>
+                <hr>
+                <div class="box3">
+                    <div class="leftclg">
+                        <h3><a href="https://www.coursera.org/account/accomplishments/certificate/CWWMA5DNCYKM" target="_blank">Programming for Everybody (Getting Started with Python)</a></h3>
+                        <div>Coursera</div>
+                    </div>
+                    <div class="rightclg"><img src="python.png" width="200px" style="border-radius: 50%;"></div>
+                </div>
+                <div class="box4">
+                    <div class="leftschl">
+                        <img src="python.png" width="200px" style="border-radius: 50%;">
+                    </div>
+                    <div class="rightschl">
+                        <h3><a href="https://www.coursera.org/account/accomplishments/certificate/ZG9XG3WDF9LX" target="_blank">Crash Course on Python</a></h3>
+                        <div>Coursera</div>
+                    </div>
+                </div>
+                <div class="box5">
+                    <div class="leftclg">
+                        <h3><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/JPMorgan%20Chase%20Corporate/XiuvjcwqWRqH9oy38_JPMorgan%20Chase%20&%20Co._kPKnSrz8aqkBTC722_1705399955072_completion_certificate.pdf" target="_blank">JPMorgan Chase & Co. - Excel Skills Job Simulation</a></h3>
+                        <div>Forage</div>
+                    </div>
+                    <div class="rightclg"><img src="excel.png" width="200px" ></div>
+                </div>
+                <div class="box6">
+                    <div class="leftschl">
+                        <img src="hr.png" width="300px">
+                    </div>
+                    <div class="rightschl">
+                        <h3><a href="https://www.coursera.org/account/accomplishments/records/4X2W782H6K6S" target="_blank">Talent Acquisition</a></h3>
+                        <div>Coursera</div>
+                    </div>
+                </div>    
+            </section>
+            <section class="fourthsection" id="third">
+                <h1>But how can you contact me?</h1>
+                <hr>
+                <div class="mail"><img src="gmail.png" width="30px">aryan503110@gmail.com</div>
+                <div class="phone"><img src="phone-call.png" width="30px">+919425093120</div>
+                <div class="linkedin"><img src="linkedin.png" width="30px">www.linkedin.com/in/aryanverma31</div>
+            </section>
+        </main>
+    </header>
+</body>
+
+</html>
